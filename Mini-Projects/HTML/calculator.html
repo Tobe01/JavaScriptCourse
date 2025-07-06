@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles/calculator.css">
+  <script src="Scripts/calculator.js"></script>
+  <script src="eventListeners.js"></script>
+</head>
+
+<body>
+  <div>
+
+    <p class="js-display"></p>
+
+      <div style="margin-top: 10px; width: 100px;"></div>
+
+        <p>
+          <button 
+            onclick="
+            randomNumber += '1';
+            updateDisplay();
+          ">1</button>
+
+          <button 
+            onclick="
+            randomNumber += '2';
+            updateDisplay();
+          ">2</button>
+
+          <button 
+            onclick="
+            randomNumber += '3';
+            updateDisplay();
+          ">3</button>
+
+          <button style="background-color: #ec971f;" 
+            onclick="
+            randomNumber += '+';
+            updateDisplay();
+          ">+</button>
+      </p>
+
+      <p>
+          <button 
+            onclick="
+            randomNumber += '4';
+            updateDisplay();
+          ">4</button>
+
+          <button 
+            onclick="
+            randomNumber += '5';
+            updateDisplay();
+          ">5</button>
+
+          <button 
+            onclick="
+            randomNumber += '6';
+            updateDisplay();
+          ">6</button>
+
+          <button class="divide" style="background-color: #ec971f;"
+            onclick="
+            randomNumber += '-';
+            updateDisplay();
+          ">-</button>
+      </p>
+
+        <p>
+          <button 
+            onclick="
+            randomNumber += '7';
+            updateDisplay();
+          ">7</button>
+
+          <button 
+            onclick="
+            randomNumber += '8'; 
+            updateDisplay();
+          ">8</button>
+
+          <button 
+            onclick="
+            randomNumber += '9'; 
+            updateDisplay();
+          ">9</button>
+
+          <button style="background-color: #ec971f;"
+            onclick="
+            randomNumber += '*';
+            updateDisplay();
+          ">*</button>
+      </p>
+
+      <p>
+          <button 
+            onclick="
+            randomNumber += 0; 
+            updateDisplay();"
+          >0</button>
+          
+          <button class="divide" 
+            onclick="
+            randomNumber += '.';
+            updateDisplay();
+          ">.</button>
+
+          <button 
+            onclick="
+            randomNumber = eval(randomNumber);
+            updateDisplay();
+          ">=</button>
+
+          <button class="divide" style="background-color: #ec971f;"
+            onclick="
+            randomNumber += '/';
+            updateDisplay();
+          ">/</button>
+        </p>
+
+        <button class="clear" 
+          onclick="
+          randomNumber = '';
+          updateDisplay();
+        ">Clear</button>
+    
+    </div>
+
+</body>
+</html>

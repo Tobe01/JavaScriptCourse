@@ -1,0 +1,50 @@
+    body {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    div{
+      background-color: black;
+      padding: 20px;
+      width: 320px;
+    }
+
+    button {
+     padding: 20px 27px 20px 27px;
+     color: white;
+     background-color: rgb(73, 73, 73);
+     border: none;
+     font: 25px bold;
+     border-radius: 50%;
+     cursor: pointer;
+     margin-bottom: 20px;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0;
+    }
+
+    .clear{
+      padding: 20px 10px;
+      font: 20px bold;
+    }
+
+    .divide{
+     padding: 20px 30px 20px 30px;
+    }
+
+    .js-display {
+      font: 45px bold;
+      color: white;
+    }
+
+    button:hover {
+      background-color: #f0ad4e;
+    }
+
+    button:active {
+      background-color: #ec971f;
+    }

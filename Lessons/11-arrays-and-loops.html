@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays and Loops</title>
+</head>
+
+<body>
+  
+   <p>Todo List Practice 1</p>
+
+   <input placeholder="Todo name" class="js-input">
+   <button class="js-addBtn" onclick="addItem2();">Add</button>
+
+   <p>Todo List Practice 2</p>
+
+   <input placeholder="Todo name" class="js-input1">
+   <button class="js-addBtn" onclick="addItem();">Add</button>
+
+   <p class="js-todoDisplay"></p>
+
+   
+   <p>Todo List</p>
+
+   <input placeholder="Todo name">
+   <input type="date">
+   <button>Add</button>
+
+</body>
+
+
+<script>
+
+  let item = document.querySelector('.js-input1');
+
+  let display = document.querySelector('.js-todoDisplay');
+
+   let arrayItems = [];
+
+  function addItem(){
+  
+      let contents = item.value;
+      
+      display.innerHTML = contents;
+      
+      arrayItems.push(contents);
+
+      display.innerHTML = arrayItems;
+      
+      item.value = '';
+
+      console.log(arrayItems);
+  }
+
+  let item2 = document.querySelector('.js-input');
+
+  function addItem2(){
+  
+      let contents = item2.value;
+
+      console.log(contents);
+
+      item2.value = '';
+  }
+
+  addEventListener('keypress', function(event){
+    if (event.key === 'Enter'){
+        addItem();
+        addItem2()
+    }
+  })
+
+</script>
+
+</html>

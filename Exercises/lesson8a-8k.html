@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object Lesson 8</title>
+</head>
+
+<body>
+  
+
+
+  <script>
+
+    const newProduct = {
+      name: 'basketball',
+      price: 2095,
+      ['delivery-time']: '3-days'
+    };
+
+    newProduct.price = 2595;
+
+    newProduct['delivery-time'] = '10 days';
+
+
+
+    console.log(newProduct);
+
+
+    function comparePrice(product1, product2) {
+      return product1.price < product2.price ? product1 : product2;
+    };
+
+    const phone = {name: 'adhersives', price: 3000};
+    const tablet = {name: 'clothings', price: 4000}
+
+    cheaperProduct = comparePrice(phone, tablet);
+
+    console.log("Cheaper product is:", cheaperProduct);
+
+
+  
+
+  </script>
+
+</body>
+
+</html>

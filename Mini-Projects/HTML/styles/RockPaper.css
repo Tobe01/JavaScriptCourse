@@ -1,0 +1,46 @@
+  .title{
+      font-size: 27px;
+      font-family: arial;
+      margin: 20px 0 40px 0;
+    }
+
+    img {
+      width: 50px;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+    }
+    
+    .btn-move img{
+      width: 100px;
+    }
+
+    .btn-move {
+      border-radius: 60px;
+      border: 3px solid white;
+      margin-right: 7px;
+      background-color: transparent;
+      width: 120px;
+      height: 120px;
+      cursor: pointer;
+    }
+    
+    .js-scores{
+      font-size: 20px;
+      font-weight: bold;
+      margin: 45px 0 30px 0;
+    }
+
+    .js-reset-btn, .js-autoPlay{
+      padding: 13px 13px;
+      font-size: 18px;
+      margin-top: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .js-moves{
+      margin-bottom: 40px;
+    }
