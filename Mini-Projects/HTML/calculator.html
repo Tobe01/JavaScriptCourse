@@ -6,7 +6,7 @@
   <title>Calculator</title>
   <link rel="stylesheet" href="styles/calculator.css">
   <script src="Scripts/calculator.js"></script>
-  <script src="eventListeners.js"></script>
+  <script src="Scripts/eventListeners.js"></script>
 </head>
 
 <body>
@@ -14,28 +14,28 @@
 
     <p class="js-display"></p>
 
-      <div style="margin-top: 10px; width: 100px;"></div>
+      <div class="spacer"></div>
 
         <p>
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '1';
             updateDisplay();
           ">1</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '2';
             updateDisplay();
           ">2</button>
 
-          <button 
+          <button type="button" class="divide" 
             onclick="
             randomNumber += '3';
             updateDisplay();
           ">3</button>
 
-          <button style="background-color: #ec971f;" 
+          <button type="button" class="operatorPlus" 
             onclick="
             randomNumber += '+';
             updateDisplay();
@@ -43,25 +43,25 @@
       </p>
 
       <p>
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '4';
             updateDisplay();
           ">4</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '5';
             updateDisplay();
           ">5</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '6';
             updateDisplay();
           ">6</button>
 
-          <button class="divide" style="background-color: #ec971f;"
+          <button type="button" class="operatorMinus"
             onclick="
             randomNumber += '-';
             updateDisplay();
@@ -69,25 +69,25 @@
       </p>
 
         <p>
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '7';
             updateDisplay();
           ">7</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '8'; 
             updateDisplay();
           ">8</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += '9'; 
             updateDisplay();
           ">9</button>
 
-          <button style="background-color: #ec971f;"
+          <button type="button" class="operatorMultiply"
             onclick="
             randomNumber += '*';
             updateDisplay();
@@ -95,32 +95,32 @@
       </p>
 
       <p>
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber += 0; 
             updateDisplay();"
           >0</button>
-          
-          <button class="divide" 
+
+          <button type="button" class="divide"
             onclick="
             randomNumber += '.';
             updateDisplay();
           ">.</button>
 
-          <button 
+          <button type="button" class="divide"
             onclick="
             randomNumber = eval(randomNumber);
             updateDisplay();
           ">=</button>
 
-          <button class="divide" style="background-color: #ec971f;"
+          <button type="button" class="operatorDivide"
             onclick="
             randomNumber += '/';
             updateDisplay();
           ">/</button>
         </p>
 
-        <button class="clear" 
+        <button type="button" class="clear" 
           onclick="
           randomNumber = '';
           updateDisplay();

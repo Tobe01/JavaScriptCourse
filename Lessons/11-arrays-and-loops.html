@@ -11,12 +11,12 @@
    <p>Todo List Practice 1</p>
 
    <input placeholder="Todo name" class="js-input">
-   <button class="js-addBtn" onclick="addItem2();">Add</button>
+   <button type="button" class="js-addBtn" onclick="addItem2();">Add</button>
 
    <p>Todo List Practice 2</p>
 
    <input placeholder="Todo name" class="js-input1">
-   <button class="js-addBtn" onclick="addItem();">Add</button>
+   <button type="button" class="js-addBtn" onclick="addItem();">Add</button>
 
    <p class="js-todoDisplay"></p>
 
@@ -24,14 +24,13 @@
    <p>Todo List</p>
 
    <input placeholder="Todo name">
-   <input type="date">
-   <button>Add</button>
+   <input type="date" placeholder="Select date">
+   <button type="button">Add</button>
 
 </body>
 
 
 <script>
-
   let item = document.querySelector('.js-input1');
 
   let display = document.querySelector('.js-todoDisplay');
@@ -70,7 +69,6 @@
         addItem2()
     }
   })
-
 </script>
 
 </html>

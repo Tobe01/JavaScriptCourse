@@ -4,14 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Challenge Exercise</title>
+  <style>
+    .add-to-cart-btn {
+      background-color: yellow;
+      border: 2px solid black;
+    }
+    .buy-now-btn {
+      background-color: goldenrod;
+      border: 2px solid black;
+    }
+  </style>
 </head>
 
 <body>
   
-<p>Adults Plain Cotton T-shirt</p>
-<p>Price: $7.99</p>
-<button style="background-color: yellow; border: 2px solid black"; onclick="alert('Added');">Add to cart</button>
-<button style="background-color: goldenrod; border: 2px solid black;" onclick="console.log('Loading...'); alert('Purchased');">Buy now</button>
+  <p>Adults Plain Cotton T-shirt</p>
+  <p>Price: $7.99</p>
+  <button type="button" class="add-to-cart-btn" onclick="alert('Added');">Add to cart</button>
+  <button type="button" class="buy-now-btn" onclick="console.log('Loading...'); alert('Purchased');">Buy now</button>
 
 </body>
 

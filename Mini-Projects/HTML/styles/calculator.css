@@ -9,6 +9,15 @@
       width: 320px;
     }
 
+    .spacer{
+      margin-top: 10px; 
+      width: 100px;
+    }
+
+    .operatorPlus, .operatorMinus, .operatorMultiply, .operatorDivide {
+      background-color: #ec971f;
+    }
+
     button {
      padding: 20px 27px 20px 27px;
      color: white;

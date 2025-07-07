@@ -78,6 +78,16 @@ let playClick = document.querySelector('.js-autoPlay');
 })
 
 
+// Rock Paper Scissors Reset Score
+document.addEventListener('DOMContentLoaded', () => {
+  let resetButton = document.querySelector('.js-reset-btn')
+  resetButton.addEventListener('click', () => {
+    if(resetButton){
+      resetScore();
+    }
+  })
+})
+
 
 // Shipping Orders
 

@@ -13,42 +13,38 @@
 </body>
 
 <script>
+    let nums = [10, 20, 30];
+
+    nums[2] = 99;
   
-  let nums = [10, 20, 30];
-
-  nums[2] = 99;
- 
-  console.log(nums);
+    console.log(nums);
 
 
-// To get the last value in an array
+    // To get the last value in an array
 
 
-  function getLastValue(array) {
-  return array[array.length - 1];
-}
+      function getLastValue(array) {
+      return array[array.length - 1];
+    }
 
-console.log(getLastValue([1, 20, 22, 24, 5]));
-console.log(getLastValue(['hi', 'hello', 'good'])); 
-
-
-// To swap the values of an array
-
-function arraySwap(array) {
-  const first = array[0];
-  const last = array[array.length - 1];
-
-  array[0] = last;
-  array[array.length - 1] = first;
-
-  return array;
-}
-
-console.log(arraySwap([1, 20, 22, 24, 5]));             
-console.log(arraySwap(['hi', 'hello', 'good'])); 
+    console.log(getLastValue([1, 20, 22, 24, 5]));
+    console.log(getLastValue(['hi', 'hello', 'good'])); 
 
 
+    // To swap the values of an array
 
+    function arraySwap(array) {
+      const first = array[0];
+      const last = array[array.length - 1];
+
+      array[0] = last;
+      array[array.length - 1] = first;
+
+      return array;
+    }
+
+    console.log(arraySwap([1, 20, 22, 24, 5]));             
+    console.log(arraySwap(['hi', 'hello', 'good'])); 
 </script>
 
 </html>

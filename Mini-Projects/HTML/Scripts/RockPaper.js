@@ -145,7 +145,7 @@ function showResult(){
 function showMoves (move, computerMove){
    let moves = document.querySelector('.js-moves');
 
-   moves.innerHTML = `You <img src="${move}-emoji.png"> <img src="${computerMove}-emoji.png">Computer`;
+   moves.innerHTML = `You <img src="images/${move}-emoji.png"> <img src="images/${computerMove}-emoji.png">Computer`;
 }
 
 

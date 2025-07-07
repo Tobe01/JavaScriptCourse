@@ -7,68 +7,68 @@
 </head>
 
 <body>
+    <button type="button" onclick="
+      console.log(`Cart quantity: ${cartQuantity}`);
+      updates()
+      ">Show Quantity</button>
 
-  <button onclick="
-  console.log(`Cart quantity: ${cartQuantity}`);
-  updates()
-  ">Show Quantity</button>
+    <button type="button" onclick="
+    cartQuantity += 1;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">Add to Cart</button>
 
-<button onclick="
-cartQuantity += 1;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">Add to Cart</button>
+    <button type="button" onclick="
+    cartQuantity += 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">+2</button>
 
-<button onclick="
-cartQuantity += 2;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">+2</button>
+    <button type="button" onclick="
+    cartQuantity += 3;
+    console.log(`Cart qantity: ${cartQuantity}`);
+    updates()
+    ">+3</button>
 
-<button onclick="
-cartQuantity += 3;
-console.log(`Cart qantity: ${cartQuantity}`);
-updates()
-">+3</button>
+    <button type="button" onclick="
+    cartQuantity = 0;
+    console.log('Cart was reset');
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">Reset Cart</button>
 
-<button onclick="
-cartQuantity = 0;
-console.log('Cart was reset');
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">Reset Cart</button>
+    <button type="button" onclick="
+    cartQuantity += 4;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">+4</button>
 
-<button onclick="
-cartQuantity += 4;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">+4</button>
+    <button type="button" onclick="
+    cartQuantity += 5;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">+5</button>
 
-<button onclick="
-cartQuantity += 5;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">+5</button>
+    <button type="button" onclick="
+    cartQuantity --;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">Remove from cart</button>
 
-<button onclick="
-cartQuantity --;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">Remove from cart</button>
+    <button type="button" onclick="
+    cartQuantity -= 2;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">-2</button>
 
-<button onclick="
-cartQuantity -= 2;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">-2</button>
+    <button type="button" onclick="
+    cartQuantity -= 3;
+    console.log(`Cart quantity: ${cartQuantity}`);
+    updates()
+    ">-3</button>
+</body>
 
-<button onclick="
-cartQuantity -= 3;
-console.log(`Cart quantity: ${cartQuantity}`);
-updates()
-">-3</button>
-
-  <script>
+    <script>
 
     let cartQuantity = 0;
 
@@ -107,6 +107,4 @@ updates()
       console.log('Cart can be updated');
     }
   </script>
-</body>
-
 </html>
