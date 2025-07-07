@@ -127,10 +127,148 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Calculator
 
-addEventListener('onkeydown', function(event){
+window.addEventListener('keydown', function(event){
   if(event.key === 'Enter') {
       randomNumber = eval(randomNumber);
-      updateDisplay();
   }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+  let btnElement1 = document.querySelector('.js-btn1');
+  let btnElement2 = document.querySelector('.js-btn2');
+  let btnElement3 = document.querySelector('.js-btn3');
+  let btnElement4 = document.querySelector('.js-plus');
+  let btnElement5 = document.querySelector('.js-btn4');
+  let btnElement6 = document.querySelector('.js-btn5');
+  let btnElement7 = document.querySelector('.js-btn6');
+  let btnElement8 = document.querySelector('.js-minus');
+  let btnElement9 = document.querySelector('.js-btn7');
+  let btnElement10 = document.querySelector('.js-btn8');
+  let btnElement11 = document.querySelector('.js-btn9');
+  let btnElement12 = document.querySelector('.js-multiply');
+  let btnElement13 = document.querySelector('.js-btn0');
+  let btnElement14 = document.querySelector('.js-btnDot');
+  let btnElement15 = document.querySelector('.js-equal');
+  let btnElement16 = document.querySelector('.js-divide');
+  let btnElement17 = document.querySelector('.js-clear');
+
+  if (btnElement1) {
+    btnElement1.addEventListener('click', () => {
+      randomNumber += '1';
+        updateDisplay();
+    });
+  }
+
+  if (btnElement2) {
+    btnElement2.addEventListener('click', () => {
+      randomNumber += '2';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement3) {
+    btnElement3.addEventListener('click', () => {
+      randomNumber += '3';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement4) {
+    btnElement4.addEventListener('click', () => {
+      randomNumber += '+';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement5) {
+    btnElement5.addEventListener('click', () => {
+      randomNumber += '4';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement6) {
+    btnElement6.addEventListener('click', () => {
+      randomNumber += '5';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement7) {
+    btnElement7.addEventListener('click', () => {
+      randomNumber += '6';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement8) {
+    btnElement8.addEventListener('click', () => {
+      randomNumber += '-';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement9) {
+    btnElement9.addEventListener('click', () => {
+      randomNumber += '7';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement10) {
+    btnElement10.addEventListener('click', () => {
+      randomNumber += '8';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement11) {
+    btnElement11.addEventListener('click', () => {
+      randomNumber += '9';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement12) {
+    btnElement12.addEventListener('click', () => {
+      randomNumber += '*';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement13) {
+    btnElement13.addEventListener('click', () => {
+      randomNumber += '0';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement14) {
+    btnElement14.addEventListener('click', () => {
+      randomNumber += '.';
+      updateDisplay();
+    });
+  }
+
+  if (btnElement15) {
+    btnElement15.addEventListener('click', () => {
+      randomNumber = eval(randomNumber);
+      updateDisplay();
+    });
+  }
+
+  if (btnElement16) {
+    btnElement16.addEventListener('click', () => {
+      randomNumber += '/';
+      updateDisplay();
+    });
+  }
+
+   if (btnElement17) {
+    btnElement17.addEventListener('click', () => {
+      randomNumber = ''
+      document.querySelector('.js-display').innerText = 0;
+    });
+  }
+})
