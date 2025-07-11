@@ -1,0 +1,46 @@
+.js-display {
+  
+}
+
+.js-parent-container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 550px;
+  background-color: greenyellow;
+}
+
+.js-main-container{
+ display: flex;
+ justify-content: space-around;
+ max-width: 550px;
+ margin-top: 20px;
+ padding: 20px 0;
+ font-size: 20px;
+ box-shadow: 1px 1px 10px 0px grey;
+}
+
+.js-delete-btn{
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+
+button{
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+input{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 17px;
+}

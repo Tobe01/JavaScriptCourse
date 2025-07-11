@@ -1,8 +1,7 @@
 let input = document.querySelector('.js-input-field');
 let btn = document.querySelector('.js-button');
 let display = document.querySelector('.js-display');
-let todoItem = ['make dinner', 'wash dishes'];
-
+let todoItem = [''];
 
 btn.addEventListener('click', () => {
    let date = document.querySelector('.js-date-field');
@@ -10,12 +9,18 @@ btn.addEventListener('click', () => {
     let inputElement = input.value;
       if (inputElement){
        todoItem.forEach((item) =>{
-        let html = `<p>${inputElement} ${dateValue}<button class="js-delete-btn" data-index="${index}>Delete</button></p>`;
+        let html = `<div class="js-main-container">
+        <div class="js-item">${inputElement}</div>
+        <div class="js-item">${dateValue}</div>
+        <button class="js-delete-btn">Delete</button>
+        </div>`;
         display.innerHTML += html;
         input.value = '';
        })
   }
 })
+
+
 
 
 
